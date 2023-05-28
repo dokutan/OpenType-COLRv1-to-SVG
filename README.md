@@ -25,5 +25,13 @@ python glyphs-to-svg.py
 
 ### 3. add the color svgs to the font
 ```
-addsvg glyphs/ font.subset.ttf
+addsvg glyphs/ font.ttf
+```
+
+## Using the font
+
+### LuaLaTeX
+Requires ``inkscape`` and running ``lualatex`` with the ``-shell-escape`` option.
+```
+\fontspec{font.ttf}[RawFeature={+svg}]
 ```
