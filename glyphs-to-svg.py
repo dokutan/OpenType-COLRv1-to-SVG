@@ -14,6 +14,7 @@ palette = font.getPalette(1)  # set the palette
 def replace_svg(path):
     glyphname = path.stem
     bounding_box = font.getGlyphBounds(glyphname)
+    # alternative backend classes to svg are: skia, cairo, coregraphics
     surfaceClass = getSurfaceClass("svg")
     surface = surfaceClass()
     with surface.canvas(bounding_box) as canvas:
