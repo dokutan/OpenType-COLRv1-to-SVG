@@ -8,7 +8,7 @@ Convert OpenType COLR or COLRv1 fonts to SVG
 pip install opentypesvg blackrenderer
 ```
 
-Obtain a COLR(v1) font from e.g. https://fonts.google.com/?coloronly=true.
+Obtain a COLR(v1) font from e.g. https://fonts.google.com/?categoryFilters=Technology:%2FTechnology%2FColor.
 
 ### 1. create monochrome svgs for all glyphs
 Use fonts2svg to obtain a list of glyphs.
